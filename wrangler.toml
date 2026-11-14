@@ -1,0 +1,18 @@
+name = "apple-health-shortcuts-mcp-test"
+main = "src/index.ts"
+compatibility_date = "2026-07-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "apple-health-shortcuts"
+database_id = "317601cb-5d62-481b-8c1e-06fa0631ad1b"
+
+[vars]
+HEALTH_TIME_ZONE = "Asia/Shanghai"
+MCP_ALLOW_ORIGIN = "*"
+RAW_RETENTION_DAYS = "35"
+SLEEP_RETENTION_DAYS = "120"
+GUIDE_URL = "https://github.com/shenqingmo3-dotcom/apple-health-shortcuts-mcp/blob/main/GUIDE-MOBILE.zh-CN.md"
+
+[triggers]
+crons = ["23 3 * * *"]
